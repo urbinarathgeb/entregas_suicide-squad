@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./src/assets/logo/favicon.svg"
+      href="../assets/logo/favicon.svg"
       type="image/x-icon"
     />
     <!-- BOOTSTRAP -->
@@ -23,7 +23,7 @@
     />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="./src/global.css" />
+    <link rel="stylesheet" href="../global.css" />
     <title>MÓDULO 2 - ACTIVIDAD AE-6</title>
   </head>
 
@@ -39,7 +39,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <div class="d-flex">
-            <img src="./src/assets/logo/logo.svg" alt="Logo Suicide Squad" />
+            <img src="../assets/logo/logo.svg" alt="Logo Suicide Squad" />
           </div>
           <button
             class="navbar-toggler"
@@ -58,14 +58,12 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="./index.html"
+                  href="../../index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./src/pages/weAre.html"
-                  >Quiénes Somos</a
-                >
+                <a class="nav-link" href="./weAre.html">Quiénes Somos</a>
               </li>
             </ul>
           </div>
@@ -73,8 +71,42 @@
       </nav>
     </header>
 
-    <main class="h-100 w-100">
-      <h1>Home</h1>
+    <main class="h-100 w-100 row">
+      <div class="card col-lg-4">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 h-75">
+        <img
+          src="../assets/weAre/javier.jpeg"
+          class="card-img-top"
+          alt="Foto Javier Urbina"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Javier Urbina</h5>
+          <p class="card-text">Un chico guapo y gentil.</p>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 h-50">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </main>
 
     <footer class="row">
