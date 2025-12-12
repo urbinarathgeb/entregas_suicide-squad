@@ -1,16 +1,8 @@
-let favoritos = [];
+//HERO
 
 $(document).ready(function () {
-  $('#CarruselArte').carousel({
-    interval: 1000,
-  });
-
-  $('.carousel-control-next').click(function () {
-    console.log('Imagen siguiente');
-  });
-
-  $('.carousel-control-prev').click(function () {
-    console.log('Imagen anterior');
+  $('#carruselArte').carousel({
+    interval: 4000,
   });
 });
 
@@ -40,7 +32,6 @@ $(document).ready(function () {
         .delay(800)
         .hide('fast');
     }
-
     if ($(this).find('.empty-heart').is(':visible')) {
       $('#liveToast')
         .text('Dibujo eliminado de favoritos')

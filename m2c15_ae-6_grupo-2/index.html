@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
@@ -69,11 +70,11 @@
     <main class="container w-100">
       <!-- HERO -->
       <div class="py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1>¡Nuestra galeria exclusiva de arte en venta!</h1>
+        <h1>¡Nuestra galería exclusiva de arte en venta!</h1>
         <p class="lead">
           Esta es una tienda de arte exclusivo con manejo de una clientela en la
-          cual solo algunas personas son invitadas a participar tanto de
-          subastas como de ventas al detalle, los precios elevados son
+          cual solo algunas personas son invitadas a participar, tanto en
+          subastas como en ventas al detalle. Los precios elevados son
           consecuentes con la calidad del arte y las arduas horas de trabajo de
           nuestra principal artista.
         </p>
@@ -81,88 +82,92 @@
 
       <div class="container">
         <div class="card-deck mb-3 text-center">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-bold">¡Los cuadros mas valorados!</h4>
+          <div class="header my-4">
+            <h2 class="my-0 font-weight-bold fs-4">
+              ¡Los cuadros más valorados!
+            </h2>
           </div>
           <div class="card-body">
-            <h1 class="card-title">
-              <small class="text-muted">Estos fueron subastados desde: </small>
+            <p class="card-title h1">
+              <small class="text-muted fs-6 d-block">Subastados desde</small>
               $1.200.000
-            </h1>
-            <ul
-              class="row list-unstyled mt-3 mb-4 d-flex justify-content-center"
-            >
-              <li>Grell (Kuroshitsuji)</li>
-              <li>Toshinori Halloween special (Boku no hero academia)</li>
-              <li>Grimsley (Pokemon)</li>
-            </ul>
-            <div
-              id="carouselExampleControls"
-              class="carousel-slide d-flex justify-content-center"
-              data-ride="carousel"
+            </p>
+
+            <article
+              id="carruselArte"
+              class="carousel slide container-fluid"
+              data-bs-ride="carousel"
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    class="d-block w-30"
                     src="./src/assets/art/grell.jpeg"
-                    alt="First slide"
+                    class="d-block img-fluid"
+                    alt="Grell"
                   />
+                  <h2 class="text-center fs-3 fw-bold text-white">Grell</h2>
                 </div>
+
                 <div class="carousel-item">
                   <img
-                    class="d-block w-30"
-                    src="./src/assets/art/toshinori yagi halloween.jpeg"
-                    alt="Second slide"
+                    src="./src/assets/art/toshinori-yagi-halloween.jpeg"
+                    class="d-block"
+                    alt="Toshinori Yagi Halloween Special"
                   />
+                  <h2 class="text-center fs-3 fw-bold text-white">
+                    Toshinori Yagi
+                  </h2>
                 </div>
+
                 <div class="carousel-item">
                   <img
-                    class="d-block w-30"
                     src="./src/assets/art/grimsley.jpeg"
-                    alt="Third slide"
+                    class="d-block"
+                    alt="Grimsley"
                   />
+                  <h2 class="text-center fs-3 fw-bold text-white">Grimsley</h2>
                 </div>
               </div>
-              <a
+              <button
                 class="carousel-control-prev"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
+                type="button"
+                data-bs-target="#carruselArte"
+                data-bs-slide="prev"
               >
                 <span
                   class="carousel-control-prev-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="sr-only">Antes</span>
-              </a>
-              <a
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
                 class="carousel-control-next"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
+                type="button"
+                data-bs-target="#carruselArte"
+                data-bs-slide="next"
               >
                 <span
                   class="carousel-control-next-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="sr-only">Despues</span>
-              </a>
-            </div>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </article>
           </div>
         </div>
       </div>
 
       <!-- PRODUCT LIST -->
 
-      <section id="productList_container" class="container my-4">
+      <section id="productList_container" class="container my-5">
+        <h2 class="text-center fs-1 fw-bold my-4">Galería</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
             <article class="card h-100">
               <img
                 src="./src/assets/art/grell.jpeg"
                 class="card-img-top"
-                alt="..."
+                alt="Grell Sutcliff"
               />
               <div class="card-body">
                 <h5 class="card-title">Grell</h5>
@@ -198,7 +203,7 @@
               <img
                 src="./src/assets/art/grimsley.jpeg"
                 class="card-img-top"
-                alt="..."
+                alt="Grimsley"
               />
               <div class="card-body">
                 <h5 class="card-title">Grimsley</h5>
@@ -236,7 +241,7 @@
               <img
                 src="./src/assets/art/jakurai.jpeg"
                 class="card-img-top"
-                alt="..."
+                alt="Dr. Jakurai"
               />
               <div class="card-body">
                 <h5 class="card-title">Jakurai</h5>
@@ -272,7 +277,7 @@
               <img
                 src="./src/assets/art/matt-and-gabumon.jpeg"
                 class="card-img-top"
-                alt="..."
+                alt="Matt & Gabumon"
               />
               <div class="card-body">
                 <h5 class="card-title">Matt & Gabumon</h5>
@@ -308,11 +313,13 @@
               <img
                 src="./src/assets/art/piers.jpeg"
                 class="card-img-top"
-                alt="..."
+                alt="Piers"
               />
               <div class="card-body">
                 <h5 class="card-title">Piers</h5>
-                <p class="card-text">Un doctor de Hypnosis Mic.</p>
+                <p class="card-text">
+                  Líder de gimnasio de tipo Siniestro en Galar.
+                </p>
                 <div class="buttons-container">
                   <button
                     class="btn modal-btn"
@@ -344,11 +351,11 @@
               <img
                 src="./src/assets/art/toshinori-yagi-halloween.jpeg"
                 class="card-img-top"
-                alt="..."
+                alt="Toshinori Yagi"
               />
               <div class="card-body">
-                <h5 class="card-title">Toshinari Yagi</h5>
-                <p class="card-text">Un doctor de Hypnosis Mic.</p>
+                <h5 class="card-title">Toshinori Yagi</h5>
+                <p class="card-text">El Símbolo de la Paz, All Might.</p>
                 <div class="buttons-container">
                   <button
                     class="btn modal-btn"
